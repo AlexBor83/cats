@@ -1,0 +1,27 @@
+.pets {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid green;
+  background-color: $backgroundlight;
+
+}
+
+.pets__wrapper {
+  width: 1078px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    width: 710px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+
+  }
+
+}
+
+.pets__title {
+  
+  color: $wight;
+}

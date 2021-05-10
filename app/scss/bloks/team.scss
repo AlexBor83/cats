@@ -1,0 +1,16 @@
+.team {
+
+}
+
+.team__wrapper {
+  margin: 0 auto;
+  width: 1184px;
+
+  @media (max-width: $tablet-width) {
+    width: 649px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+  }
+}

@@ -1,0 +1,21 @@
+.care {
+  background-image: url(../../images/background_cat.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 645px;
+}
+
+.care__wrapper {
+  margin: 0 auto;
+  width: 1160px;
+
+  @media (max-width: $tablet-width) {
+    width: 560px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+
+  }
+}

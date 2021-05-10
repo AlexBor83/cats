@@ -1,0 +1,19 @@
+.pet-features {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid rgb(128, 0, 122);
+  background-color: $backgroundlight;
+}
+
+.pet-features__wrapper {
+  margin: 0 auto;
+  width: 1090px;
+
+  @media (max-width: $tablet-width) {
+    width: 718px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+  }
+}

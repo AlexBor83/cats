@@ -1,0 +1,17 @@
+.reviews {
+  background-color: $backgroundlight;
+}
+
+.reviews__wrapper {
+  margin: 0 auto;
+  width: 940px;
+
+  @media (max-width: $tablet-width) {
+    width: 655px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+    
+  }
+}

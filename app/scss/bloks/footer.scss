@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+
+  @media (max-width: $mobile-width-only) {
+  flex-direction: column;
+  }
+
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  width: 850px;
+
+  @media (max-width: $tablet-width) {
+    width: 670px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+
+  }
+}
