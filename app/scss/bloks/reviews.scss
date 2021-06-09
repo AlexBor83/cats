@@ -12,6 +12,46 @@
 
   @media (max-width: $mobile-width-only) {
     width: 290px;
-    
+
   }
 }
+
+.reviews__text {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+}
+
+.reviews__item {
+  position: relative;
+}
+
+.reviews__foto {
+  position: absolute;
+  left: -100px;
+  top: 40px;
+}
+
+.reviews__author-info {
+  background-color: #151313;
+  width: 640px;
+  margin-left: 200px;
+  padding: 109px 87px 107px 145px;
+  color: $wight;
+}
+
+.reviews__author-name {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 19px;
+}
+
+.reviews__author-text {
+  opacity: 0.7;
+  padding: 0;
+  font-size: 14px;
+  line-height: 23px;
+}
+

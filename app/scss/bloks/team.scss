@@ -5,6 +5,7 @@
 .team__wrapper {
   margin: 0 auto;
   width: 1184px;
+  text-align: center;
 
   @media (max-width: $tablet-width) {
     width: 649px;
@@ -14,3 +15,31 @@
     width: 290px;
   }
 }
+
+.team__slogan {
+  margin: 0 auto;
+  margin-top: 83px;
+  margin-bottom: 23px;
+}
+
+.team__text {
+  width: 510px;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.team__members {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team__member {
+  width: 1034px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+

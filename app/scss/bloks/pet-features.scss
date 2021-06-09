@@ -1,13 +1,14 @@
 .pet-features {
   display: flex;
   flex-direction: column;
-  outline: 1px solid rgb(128, 0, 122);
   background-color: $backgroundlight;
+  text-align: center;
 }
 
 .pet-features__wrapper {
   margin: 0 auto;
   width: 1090px;
+  position: relative;
 
   @media (max-width: $tablet-width) {
     width: 718px;
@@ -17,3 +18,32 @@
     width: 280px;
   }
 }
+
+.pet-features__slogan {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 23px;
+}
+
+.pet-features__text {
+  width: 720px;
+  margin-bottom: 40px;
+  margin: 0 auto;
+}
+
+.pet-features__img {
+
+
+}
+
+.pet-features__list {
+  padding: 0;
+  list-style: none;
+  color: $wight;
+  width: 250px;
+  text-align: end;
+}
+
+
+
+

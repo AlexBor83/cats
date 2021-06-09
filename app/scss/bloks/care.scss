@@ -19,3 +19,21 @@
 
   }
 }
+
+.care__title {
+  width: 470px;
+  margin: 0 auto;
+  padding-top: 84px;
+  margin-bottom: 48px;
+}
+
+.care__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  row-gap: 43px;
+  column-gap: 42px;
+}

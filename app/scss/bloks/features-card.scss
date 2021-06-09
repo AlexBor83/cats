@@ -1,0 +1,15 @@
+.features-card {
+  width: 360px;
+  background: $backgroundlight;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 64px;
+}
+
+.features-card__text {
+  width: 255px;
+  padding-top: 46px;
+  padding-bottom: 41px;
+}

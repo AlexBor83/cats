@@ -1,6 +1,5 @@
 img {
   max-width: 100%;
-  height: auto;
 }
 
 a {
@@ -28,9 +27,10 @@ a {
   box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-size: 36px;
   line-height: 42px;
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   color: white;
 }

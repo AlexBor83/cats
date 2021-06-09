@@ -1,0 +1,42 @@
+.member__foto {
+  width: 360px;
+
+}
+
+.member__card {
+  display: inline-block;
+  width: 660px;
+  border: 1px solid $brownlight;
+  padding: 23px 34px 23px 26px;
+  background: $backgroundlight;
+  text-align: start;
+}
+
+.member__name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  padding-top: 69px;
+  padding-left: 98px;
+}
+
+.member__function {
+  padding-left: 98px;
+  padding-bottom: 10px;
+}
+
+.member__text {
+  color: $wight;
+  padding-left: 98px;
+  width: 400px;
+  padding-bottom: 40px;
+}
+
+.member__social {
+  margin-left: 98px;
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+
+}

@@ -8,8 +8,11 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Питомник Мейн Кунов</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
@@ -31,17 +34,32 @@
           <ul class="header__social social">
             <li class="social__item social__item--acnive">
               <a class="social__link social__link--vkontakte" href="#">
-                <img src="images/vkontakte.svg" alt="Вконтактеа" width="13" height="8"/>
+                <img
+                  src="images/vkontakte.svg"
+                  alt="Вконтактеа"
+                  width="13"
+                  height="8"
+                />
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
-                <img src="images/twitter.svg" alt="Твиттер" width="15" height="10"/>
+                <img
+                  src="images/twitter.svg"
+                  alt="Твиттер"
+                  width="15"
+                  height="10"
+                />
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
-                <img src="images/facebook.svg" alt="Фейсбук" width="5" height="10"/>
+                <img
+                  src="images/facebook.svg"
+                  alt="Фейсбук"
+                  width="5"
+                  height="10"
+                />
               </a>
             </li>
           </ul>
@@ -51,13 +69,11 @@
             <p class="greeting__slogan">
               Первый питомник с расширенным спектром услуг
             </p>
-            <button class="greeting__button button" type="button">
-              Смотреть котиков
-            </button>
+            <a class="greeting__link button" href="#"> Смотреть котиков </a>
           </section>
 
           <div class="header__image">
-            <img src="#" alt="Рыжий мейн-кун" />
+            <img src="images/cat_header.png" alt="Рыжий мейн-кун" />
           </div>
         </div>
       </div>
@@ -73,30 +89,43 @@
           </p>
           <ul class="pets__list">
             <li class="pets__item">
-              <a href="#">Коты</a>
+              <a class="pets__link" href="#">Коты</a>
             </li>
             <li class="pets__item">
-              <a href="#">Кошки</a>
+              <a class="pets__link" href="#">Кошки</a>
             </li>
             <li class="pets__item">
-              <a href="#">Котята</a>
+              <a class="pets__link" href="#">Котята</a>
             </li>
           </ul>
 
-          <ul class="pets__images slider">
-            <li class="pets__image slider__item">
-              <img src="#" alt="Коты" />
-            </li>
-            <li class="pets__image slider__item">
-              <img src="#" alt="Кошки" />
-            </li>
-            <li class="pets__image slider__item">
-              <img src="#" alt="Котята" />
-            </li>
-          </ul>
-          <button class="pets__button button" type="button">
-            Смотреть больше
-          </button>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <ul class="pets__images slider">
+                <li class="pets__image slider__item">
+                  <img
+                    src="images/wight_cat.png"
+                    width="530"
+                    height="265"
+                    alt="Коты"
+                  />
+                </li>
+                <li class="pets__image slider__item">
+                  <img src="images/young_cat.png" alt="Котята" />
+                </li>
+                <li class="pets__image slider__item">
+                  <img src="images/cat_woman.png" alt="Кошки" />
+                </li>
+              </ul>
+              <button class="button__slider button__slider--prev">
+                <span class="visually-hidden">Предыдущий слайд</span>
+              </button>
+              <button class="button__slider button__slider--next">
+                <span class="visually-hidden">Следующий слайд</span>
+              </button>
+              <a class="pets__button button" href="#"> Смотреть больше </a>
+            </div>
+          </div>
         </div>
       </section>
       <section class="pet-features">
@@ -107,17 +136,18 @@
             в свой дом этого питомца, вы получите умное животное, которому нет
             равных
           </p>
+          <img class="pet-features__img" src="images/redhead_cat.png" alt="" />
           <ul class="pet-features__list">
-            <li class="pet-features__item">
+            <li class="pet-features__item pet-features__item--1">
               Легко уживается в семьях с детьми или другими животными
             </li>
-            <li class="pet-features__item">
+            <li class="pet-features__item pet-features__item--2">
               Внешний вид этой кошки похож на дикую рысь
             </li>
-            <li class="pet-features__item">
+            <li class="pet-features__item pet-features__item--3">
               Выполняет команды как дрессированная собака
             </li>
-            <li class="pet-features__item">
+            <li class="pet-features__item pet-features__item--4">
               Вес может достигать 12 кг, а длина 1 м
             </li>
           </ul>
@@ -132,13 +162,22 @@
           </p>
           <ul class="features__list">
             <li class="features__item features-card features__item--active">
-              <img class="features-card__image" src="#" alt="знак врача" />
+              <img
+                class="features-card__image"
+                src="images/icon_vet.svg"
+                width=""
+                alt="знак врача"
+              />
               <span class="features-card__text">
                 Бесплатное ветеринарное обслуживание 5 лет
               </span>
             </li>
             <li class="features__item features-card">
-              <img class="features-card__image" src="#" alt="Время клонсультации круглосуточно"/>
+              <img
+                class="features-card__image"
+                src="images/icon_24_hours.svg"
+                alt="Время клонсультации круглосуточно"
+              />
               <span class="features-card__text">
                 Консультирование по любому вопросу 24 часа в сутки
               </span>
@@ -146,7 +185,7 @@
             <li class="features__item features-card">
               <img
                 class="features-card__image"
-                src="#"
+                src="images/icon_food.svg"
                 alt="знак кошачей еды"
               />
               <span class="features-card__text">
@@ -209,7 +248,7 @@
               <li class="team__member member slider">
                 <img
                   class="member__foto"
-                  src="#"
+                  src="images/popov.png"
                   alt="Фотография основателя питомника"
                 />
                 <div class="member__card">
@@ -221,24 +260,39 @@
                   </p>
                   <ul class="member__social social">
                     <li class="social__item social__item--acnive">
-                      <a class="social__link social__link--vkontakte" href="#"
-                        >Вконтакте</a
-                      >
+                      <a class="social__link social__link--vkontakte" href="#">
+                        <img
+                          src="images/vkontakte.svg"
+                          alt="Вконтактеа"
+                          width="13"
+                          height="8"
+                        />
+                      </a>
                     </li>
                     <li class="social__item">
-                      <a class="social__link social__link--twitter" href="#"
-                        >Твиттер</a
-                      >
+                      <a class="social__link social__link--twitter" href="#">
+                        <img
+                          src="images/twitter.svg"
+                          alt="Твиттер"
+                          width="15"
+                          height="10"
+                        />
+                      </a>
                     </li>
                     <li class="social__item">
-                      <a class="social__link social__link--facebook" href="#"
-                        >Фейсбук</a
-                      >
+                      <a class="social__link social__link--facebook" href="#">
+                        <img
+                          src="images/facebook.svg"
+                          alt="Фейсбук"
+                          width="5"
+                          height="10"
+                        />
+                      </a>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li class="team__member slider">
+              <li class="team__member slider visually-hidden">
                 <img
                   class="member__foto"
                   src="#"
@@ -253,24 +307,39 @@
                   </p>
                   <ul class="member__social social">
                     <li class="social__item social__item--acnive">
-                      <a class="social__link social__link--vkontakte" href="#"
-                        >Вконтакте</a
-                      >
+                      <a class="social__link social__link--vkontakte" href="#">
+                        <img
+                          src="images/vkontakte.svg"
+                          alt="Вконтактеа"
+                          width="13"
+                          height="8"
+                        />
+                      </a>
                     </li>
                     <li class="social__item">
-                      <a class="social__link social__link--twitter" href="#"
-                        >Твиттер</a
-                      >
+                      <a class="social__link social__link--twitter" href="#">
+                        <img
+                          src="images/twitter.svg"
+                          alt="Твиттер"
+                          width="15"
+                          height="10"
+                        />
+                      </a>
                     </li>
                     <li class="social__item">
-                      <a class="social__link social__link--facebook" href="#"
-                        >Фейсбук</a
-                      >
+                      <a class="social__link social__link--facebook" href="#">
+                        <img
+                          src="images/facebook.svg"
+                          alt="Фейсбук"
+                          width="5"
+                          height="10"
+                        />
+                      </a>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li class="team__member slider">
+              <li class="team__member slider visually-hidden">
                 <img
                   class="member__foto"
                   src="#"
@@ -285,19 +354,34 @@
                   </p>
                   <ul class="member__social social">
                     <li class="social__item social__item--acnive">
-                      <a class="social__link social__link--vkontakte" href="#"
-                        >Вконтакте</a
-                      >
+                      <a class="social__link social__link--vkontakte" href="#">
+                        <img
+                          src="images/vkontakte.svg"
+                          alt="Вконтактеа"
+                          width="13"
+                          height="8"
+                        />
+                      </a>
                     </li>
                     <li class="social__item">
-                      <a class="social__link social__link--twitter" href="#"
-                        >Твиттер</a
-                      >
+                      <a class="social__link social__link--twitter" href="#">
+                        <img
+                          src="images/twitter.svg"
+                          alt="Твиттер"
+                          width="15"
+                          height="10"
+                        />
+                      </a>
                     </li>
                     <li class="social__item">
-                      <a class="social__link social__link--facebook" href="#"
-                        >Фейсбук</a
-                      >
+                      <a class="social__link social__link--facebook" href="#">
+                        <img
+                          src="images/facebook.svg"
+                          alt="Фейсбук"
+                          width="5"
+                          height="10"
+                        />
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -330,25 +414,34 @@
                   class="help__button help__button--active"
                   type="button"
                 ></button>
-                <p class="help-card__all-text">
-                  Есть важная причина, почему котенка стоит забирать домой
-                  только после трех месяцев, — это вакцинация. Первые прививки
-                  животному делают в возрасте 8 недель. Ревакцинация проводится
-                  через 3–4 недели. То есть котенок, покидающий дом позднее 12
-                  недель, максимально защищен от различных вирусов и инфекций.
-                </p>
-                <p class="help-card__all-text">
-                  Так что, чтобы в дома появился психически и физически здоровый
-                  котенок, игривый, жизнерадостный, самостоятельный и
-                  воспитанный, не спешите забирать его от кошки-мамы раньше трех
-                  месяцев.
-                </p>
+                <div class="help__answer help__answer--show">
+                  <p class="help-card__all-text">
+                    Есть важная причина, почему котенка стоит забирать домой
+                    только после трех месяцев, — это вакцинация. Первые прививки
+                    животному делают в возрасте 8 недель. Ревакцинация
+                    проводится через 3–4 недели. То есть котенок, покидающий дом
+                    позднее 12 недель, максимально защищен от различных вирусов
+                    и инфекций.
+                  </p>
+                  <p class="help-card__all-text">
+                    Так что, чтобы в дома появился психически и физически
+                    здоровый котенок, игривый, жизнерадостный, самостоятельный и
+                    воспитанный, не спешите забирать его от кошки-мамы раньше
+                    трех месяцев.
+                  </p>
+                </div>
               </div>
             </li>
             <li class="help__item">
               <div class="help__wrapper help-card">
                 <p class="help-card__text">Как зарезервировать котенка?</p>
                 <button class="help__button" type="button"></button>
+              </div>
+              <div class="help__answer">
+                <p class="help-card__all-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
+                </p>
               </div>
             </li>
             <li class="help__item">
@@ -357,6 +450,12 @@
                   Можно ли купить кота, если я живу в другом городе?
                 </p>
                 <button class="help__button" type="button"></button>
+                <div class="help__answer">
+                  <p class="help-card__all-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ipsum, reiciendis!
+                  </p>
+                </div>
               </div>
             </li>
             <li class="help__item">
@@ -365,6 +464,12 @@
                   Как подготовить дом к приему нового питомца?
                 </p>
                 <button class="help__button" type="button"></button>
+                <div class="help__answer">
+                  <p class="help-card__all-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ipsum, reiciendis!
+                  </p>
+                </div>
               </div>
             </li>
           </ol>
@@ -374,8 +479,13 @@
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="reviews__text">Отзывы</h2>
+
           <blockquote class="reviews__item slider__item">
-            <img class="reviews__foto" src="#" alt="фотография автора отзыва" />
+            <img
+              class="reviews__foto"
+              src="images/popov.png"
+              alt="фотография автора отзыва"
+            />
             <div class="reviews__author-info">
               <cite class="reviews__author-name"> Серёжа Попов </cite>
               <p class="reviews__author-text">
@@ -408,7 +518,7 @@
             ></button>
           </blockquote>
 
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item slider__item visually-hidden">
             <img class="reviews__foto" src="#" alt="фотография автора отзыва" />
             <div class="reviews__author-info">
               <cite class="reviews__author-name"> Егор </cite>
@@ -419,14 +529,24 @@
 
               <ul class="reviews__author-social social">
                 <li class="social__item">
-                  <a class="social__link social__link--twitter" href="#"
-                    >Твиттер</a
-                  >
+                  <a class="social__link social__link--twitter" href="#">
+                    <img
+                      src="images/twitter.svg"
+                      alt="Твиттер"
+                      width="15"
+                      height="10"
+                    />
+                  </a>
                 </li>
                 <li class="social__item social__item--acnive">
-                  <a class="social__link social__link--vkontakte" href="#"
-                    >Вконтакте</a
-                  >
+                  <a class="social__link social__link--facebook" href="#">
+                    <img
+                      src="images/facebook.svg"
+                      alt="Фейсбук"
+                      width="5"
+                      height="10"
+                    />
+                  </a>
                 </li>
               </ul>
             </div>
@@ -448,7 +568,7 @@
         <a href="#" class="footer__logo logo">
           <img
             class="logo__img"
-            src="#"
+            src="images/logo.svg"
             alt="Логотип питомника"
             width="47"
             height="21"
@@ -456,17 +576,37 @@
         </a>
         <ul class="footer__social social">
           <li class="social__item social__item--acnive">
-            <a class="social__link social__link--vkontakte" href="#"
-              >Вконтакте</a
-            >
+            <a class="social__link social__link--vkontakte" href="#">
+              <img
+                src="images/vkontakte.svg"
+                alt="Вконтактеа"
+                width="13"
+                height="8"
+              />
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Твиттер</a>
+            <a class="social__link social__link--twitter" href="#">
+              <img
+                src="images/twitter.svg"
+                alt="Твиттер"
+                width="15"
+                height="10"
+              />
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+            <a class="social__link social__link--facebook" href="#">
+              <img
+                src="images/facebook.svg"
+                alt="Фейсбук"
+                width="5"
+                height="10"
+              />
+            </a>
           </li>
         </ul>
+
         <span class="footer__adres">
           Новосибирск, Пушкинский проспект, 19
         </span>

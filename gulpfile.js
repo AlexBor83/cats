@@ -43,7 +43,7 @@ function styles() {
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
         overrideBrowserslist: ['last 10 version'],
-        grid: true        
+        grid: true
     }))
     .pipe(sourcemaps.write())
     .pipe(dest('app/css/'))
@@ -58,7 +58,7 @@ function build() {
         'app/js/**/*',
     ], {base: 'app'})
     .pipe(dest('dist'))
-    
+
 }
 
 

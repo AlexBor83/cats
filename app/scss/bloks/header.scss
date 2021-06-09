@@ -1,17 +1,14 @@
 .header {
   display: flex;
   flex-direction: column;
-  min-height: 712px;
-  outline: 2px solid blue;
-  position: relative;
-
+  
 }
 
 
 .header__wraper {
-  outline: 2px solid red;
   width: 1206px;
   margin: 0 auto;
+  position: relative;
 
   @media (max-width: $tablet-width) {
     width: 688px;
@@ -24,19 +21,24 @@
 }
 
 .header__logo {
-
-
-}
-
-.header__content {
-  outline: 2px solid blueviolet;
-
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 .header__social{
   position: absolute;
   left: 33px;
-  top: 35px;
-  
+  top: 545px;
+
+}
+
+.header__image {
+  position: absolute;
+  left: 133px;
+  top: 8px;
+  width: 1068px;
+  height: 712px;
 }
 

@@ -10,6 +10,9 @@
 .footer__wrapper {
   margin: 0 auto;
   width: 850px;
+  color: rgba(253, 242, 230, 0.83);
+  display: flex;
+  justify-content: space-between;
 
   @media (max-width: $tablet-width) {
     width: 670px;
@@ -17,6 +20,13 @@
 
   @media (max-width: $mobile-width-only) {
     width: 290px;
-
   }
 }
+
+.footer__social {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+}
+
+

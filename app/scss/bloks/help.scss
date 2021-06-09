@@ -15,3 +15,54 @@
 
   }
 }
+
+.help__slogan {
+  margin: 0 auto;
+  padding-top: 73px;
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.help__subtitle {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width: 940px;
+}
+
+.help__list {
+
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  counter-reset: my-counter;
+  padding-bottom: 70px;
+}
+
+.help__item {
+
+  border: 1px solid $brownlight;
+  padding: 18px 35px;
+  counter-increment: my-counter;
+  position: relative;
+  color: #DDD0C3;
+
+  &::before {
+    content: "0" counter(my-counter);
+    position: absolute;
+    font-size: 70px;
+    line-height: 82px;
+    left: -100px;
+    font-weight: bold;
+    color: $brownlight;
+  }
+}
+
+.help-card__all-text {
+  width: 540px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #DDD0C3;
+}
+
