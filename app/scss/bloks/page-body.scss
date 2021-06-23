@@ -1,10 +1,18 @@
 .page-body {
+  min-width: 320px;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   background-color: $backgrounddark;
   color: $brown;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-family: 'Roboto', "Arial", sans-serif;
+  font-size: 16px;
   line-height: 26px;
+  font-weight: normal;
+  font-style: normal;
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

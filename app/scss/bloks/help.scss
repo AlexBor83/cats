@@ -1,17 +1,14 @@
 .help {
-  background-color: $backgroundlight;
 }
 
 .help__wrapper {
-  margin: 0 auto;
-  width: 940px;
+  background-color: $backgroundlight;
 
   @media (max-width: $tablet-width) {
-    width: 655px;
+
   }
 
   @media (max-width: $mobile-width-only) {
-    width: 290px;
 
   }
 }
@@ -24,11 +21,9 @@
 }
 
 .help__subtitle {
-  display: block;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 60px;
-  width: 940px;
 }
 
 .help__list {
@@ -37,7 +32,9 @@
   padding: 0px;
   list-style: none;
   counter-reset: my-counter;
+  padding-left: 30px;
   padding-bottom: 70px;
+  margin-left: 180px;
 }
 
 .help__item {
@@ -47,6 +44,17 @@
   counter-increment: my-counter;
   position: relative;
   color: #DDD0C3;
+  width: 790px;
+
+  @media (max-width: $tablet-width) {
+    width: 553px;
+    margin-left: 100px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+    margin: 0;
+  }
 
   &::before {
     content: "0" counter(my-counter);
@@ -56,13 +64,25 @@
     left: -100px;
     font-weight: bold;
     color: $brownlight;
+
+    @media (max-width: $mobile-width-only) {
+      content: "";
+    }
   }
 }
 
 .help-card__all-text {
-  width: 540px;
+  width: 560px;
   font-size: 16px;
   line-height: 24px;
   color: #DDD0C3;
+
+  @media (max-width: $tablet-width) {
+    width: 390px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 250px;
+  }
 }
 

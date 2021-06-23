@@ -1,8 +1,24 @@
 .greeting {
   margin-left: 122px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 40px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+    margin: 0;
+  }
 }
 .greeting__city {
   padding-bottom: 18px;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 .greeting__title {
@@ -11,15 +27,27 @@
   line-height: 60px;
   max-width: 400px;
   padding-bottom: 31px;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .greeting__slogan {
   max-width: 300px;
   padding-bottom: 45px;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 14px;
+    line-height: 20px;
+
+  }
 }
 
 .greeting__link {
   margin-bottom: 186px;
 }
+
 
 

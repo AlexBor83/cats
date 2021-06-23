@@ -1,5 +1,6 @@
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -8,7 +9,7 @@ a {
   display: inline-block;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -24,13 +25,6 @@ a {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
+  box-sizing: border-box;}
 
-h1, h2 {
-  font-size: 36px;
-  line-height: 42px;
-  font-family: 'Yeseva One', cursive;
-  font-weight: normal;
-  color: white;
-}
+

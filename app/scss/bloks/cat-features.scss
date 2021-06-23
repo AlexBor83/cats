@@ -1,6 +1,21 @@
 .cat-features {
   border: 1px solid $brown;
   width: 558px;
+
+  @media (max-width: $tablet-width) {
+
+    &--wool {
+      order: -2;
+    }
+
+    &--eyes {
+      order: -1;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+  }
 }
 
 .cat-features__title {
@@ -8,6 +23,10 @@
   font-size: 22px;
   line-height: 26px;
   padding-left: 60px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 25px;
+  }
 }
 
 .cat-features__text {
@@ -16,6 +35,11 @@
   line-height: 23px;
   padding-left: 60px;
   width: 447px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 240px;
+    padding-left: 25px;
+  }
 }
 
 

@@ -1,24 +1,11 @@
 .pets {
   display: flex;
   flex-direction: column;
-  outline: 1px solid green;
-  background-color: $backgroundlight;
   text-align: center;
 }
 
 .pets__wrapper {
-  width: 1060px;
-  margin: 0 auto;
-
-  @media (max-width: $tablet-width) {
-    width: 710px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    width: 290px;
-
-  }
-
+  background-color: $backgroundlight;
 }
 
 .pets__title {
@@ -26,12 +13,22 @@
   margin-top: 233px;
   margin-bottom: 23px;
 
+  @media (max-width: $tablet-width) {
+    margin-top: 100px;
+  }
+
 }
 
 .pets__text {
   width: 516px;
   margin: 0 auto;
   margin-bottom: 38px;
+
+  @media(max-width: $mobile-width-only) {
+    width: 290px;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .pets__list {

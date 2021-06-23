@@ -1,0 +1,14 @@
+.section__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: 'Yeseva One', "Georgia", serif;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+
+  @media (max-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 32px;
+}
+}

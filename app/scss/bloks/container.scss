@@ -1,0 +1,13 @@
+.container {
+  width: 1286px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  background-color: $backgrounddark;
+  margin: 0 auto;
+
+  @media(max-width: $tablet-width) {
+    width: auto;
+    padding: 0 15px;
+  }
+}
