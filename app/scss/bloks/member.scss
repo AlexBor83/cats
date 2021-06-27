@@ -1,14 +1,14 @@
-.member__foto {
-  width: 360px;
-
+.member__container {
+  width: 660px;
+  border: 1px solid rgba(160, 123, 80, 0.43);
+  padding-top: 40px;
+  padding-right: 60px;
 }
 
+
 .member__card {
-  display: inline-block;
-  width: 660px;
-  border: 1px solid $brownlight;
-  padding: 23px 34px 23px 26px;
-  background: $backgroundlight;
+  display: block;
+  background: #1F1C1D;
   text-align: start;
 }
 
@@ -27,9 +27,9 @@
 }
 
 .member__text {
-  color: $wight;
+  color: rgba(255, 255, 255, 0.72);
   padding-left: 98px;
-  width: 400px;
+  width: 500px;
   padding-bottom: 40px;
 }
 
@@ -38,5 +38,7 @@
   display: flex;
   width: 80px;
   justify-content: space-between;
-
+  padding-bottom: 95px;
 }
+
+

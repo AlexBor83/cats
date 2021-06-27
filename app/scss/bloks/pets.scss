@@ -20,7 +20,7 @@
 }
 
 .pets__text {
-  width: 516px;
+  width: 530px;
   margin: 0 auto;
   margin-bottom: 38px;
 
@@ -38,28 +38,59 @@
   font-size: 18px;
   line-height: 21px;
   list-style: none;
-  color: $wight;
+  color: rgba(255, 255, 255, 0.2);
   margin: 0 auto;
   display: flex;
   width: 272px;
   justify-content: space-between;
+  margin-bottom: 30px;
+
+}
+
+.pets__link:focus {
+  color: $wight;
 }
 
 .pets__images {
   padding: 0;
   margin: 0;
+  margin-left: 60px;
   margin-bottom: 40px;
   list-style: none;
   display: grid;
   grid-template-columns: 530px 530px;
-  grid-template-rows: 315px 315px;
-  justify-items: stretch;
+  grid-template-rows:  220px 240px;
+  grid-gap: 15px;
+
+  justify-items: start;
+}
+
+.pets__image {
+
+  &--cat {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  &--youngCat {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-self: stretch;
+  }
+
+  &--youngCat img {
+    height: 490px;
+  }
+
+  &--catWoman {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+  }
+
 }
 
 
 
-.pets__image:nth-child(2) {
-  grid-row: 1/3;
-  grid-column: 2/3;
-}
+
 

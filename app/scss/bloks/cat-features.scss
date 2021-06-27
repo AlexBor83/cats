@@ -1,6 +1,10 @@
 .cat-features {
   border: 1px solid $brown;
-  width: 558px;
+  width: 100%;
+  min-height: 165px;
+  position: relative;
+
+
 
   @media (max-width: $tablet-width) {
 
@@ -16,6 +20,25 @@
   @media (max-width: $mobile-width-only) {
     width: 290px;
   }
+}
+
+.cat-features__link {
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    content: "";
+    width: 10%;
+    height: 100%;
+    background-color: $brownlight;
+    border-left: 1px solid $brownlight;
+    position: absolute;
+    right: 0;
+    background-image: url(../../images/vector_right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
 }
 
 .cat-features__title {
@@ -34,7 +57,7 @@
   font-size: 14px;
   line-height: 23px;
   padding-left: 60px;
-  width: 447px;
+  width: 458px;
 
   @media (max-width: $mobile-width-only) {
     width: 240px;

@@ -4,6 +4,7 @@
 
 .reviews__wrapper {
   background-color: $backgroundlight;
+  padding-bottom: 70px;
 
 
   @media (max-width: $tablet-width) {
@@ -27,16 +28,20 @@
 
 .reviews__foto {
   position: absolute;
-  left: -100px;
-  top: 40px;
+  width: 481px;
+  height: 331px;
+  left: 10px;
+  top: 26px;
 }
 
 .reviews__author-info {
+  margin-left: 50px;
   background-color: #151313;
   width: 640px;
-  margin-left: 200px;
-  padding: 109px 87px 107px 145px;
+  margin-left: 420px;
+  padding: 109px 85px 50px 145px;
   color: $wight;
+  text-align: start;
 }
 
 .reviews__author-name {
@@ -52,5 +57,9 @@
   padding: 0;
   font-size: 14px;
   line-height: 23px;
+}
+
+.reviews__author-date {
+  color: rgba(160, 123, 80, 0.94);
 }
 

@@ -40,7 +40,6 @@
 .help__item {
 
   border: 1px solid $brownlight;
-  padding: 18px 35px;
   counter-increment: my-counter;
   position: relative;
   color: #DDD0C3;
@@ -71,11 +70,49 @@
   }
 }
 
-.help-card__all-text {
-  width: 560px;
+.help__question {
+  border-bottom: 1px solid $brownlight;
+  position: relative;
+}
+
+
+
+.help-question-text {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
+
+.help__button {
+  position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid $brownlight;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(../../images/plus.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.help__button--active {
+  background-color: $brownlight;
+  background-image: url(../../images/minus.svg);
+}
+
+
+.help__answer-text {
+  padding-left: 40px;
+  width: 575px;
   font-size: 16px;
   line-height: 24px;
   color: #DDD0C3;
+
 
   @media (max-width: $tablet-width) {
     width: 390px;

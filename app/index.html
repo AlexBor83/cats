@@ -13,6 +13,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Yeseva+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
@@ -65,7 +68,7 @@
           </ul>
           <section class="header__greeting greeting">
             <span class="greeting__city">Новосибирск</span>
-            <h1 class="greeting__title">Питомник Мейн-Кунов</h1>
+            <h1 class="section__title greeting__title">Питомник Мейн-Кунов</h1>
             <p class="greeting__slogan">
               Первый питомник с расширенным спектром услуг
             </p>
@@ -97,19 +100,19 @@
           <div class="slider slider__show">
             <div class="slider__wrapper">
               <ul class="pets__images slider__gallery">
-                <li class="pets__image pets__image--`cat slider__item">
+                <li class="pets__image pets__image--cat slider__item">
                   <img
                     src="images/wight_cat.png"
-                    width="530"
-                    height="265"
-                    alt="Коты"
+                      alt="Коты"
+                      width="535"
+                      height="214"
                   />
                 </li>
                 <li class="pets__image pets__image--youngCat slider__item">
-                  <img src="images/young_cat.png" alt="Котята" />
+                  <img src="images/young_cat.png" alt="Котята" width="500" height="500" />
                 </li>
                 <li class="pets__image pets__image--catWoman  slider__item">
-                  <img src="images/cat_woman.png" alt="Кошки" />
+                  <img src="images/cat_woman.png" alt="Кошка" width="535" height="241" />
                 </li>
               </ul>
               <button class="button__slider button__slider--prev">
@@ -125,7 +128,7 @@
       </section>
       <section class="pet-features section">
         <div class="pet-features__wrapper container">
-          <h2 class="pet-features__slogan">Особенности породы</h2>
+          <h2 class=" pet-features__slogan section__title">Особенности породы</h2>
           <p class="pet-features__text">
             Мейн-Кун - это порода, которая вызывает к&nbspсебе уважение. Приобретая
             в свой дом этого питомца, вы получите умное животное, которому нет
@@ -157,6 +160,7 @@
           </p>
           <ul class="features__list">
             <li class="features__item features-card features__item--active">
+              <a href="#" class="features__link">
               <img
                 class="features-card__image"
                 src="images/icon_vet.svg"
@@ -166,8 +170,10 @@
               <span class="features-card__text">
                 Бесплатное ветеринарное обслуживание 5 лет
               </span>
+              </a>
             </li>
             <li class="features__item features-card">
+              <a href="#" class="features__link">
               <img
                 class="features-card__image"
                 src="images/icon_24_hours.svg"
@@ -176,8 +182,10 @@
               <span class="features-card__text">
                 Консультирование по любому вопросу 24 часа в сутки
               </span>
+              </a>
             </li>
             <li class="features__item features-card">
+              <a href="#" class="features__link">
               <img
                 class="features-card__image"
                 src="images/icon_food.svg"
@@ -186,6 +194,7 @@
               <span class="features-card__text">
                 Индивидуальный подбор питания для вашего кота
               </span>
+              </a>
             </li>
           </ul>
         </div>
@@ -246,10 +255,11 @@
             <ul class="team__members">
               <li class="team__member member team__slider--list">
                 <img
-                  class="member__foto"
+                  class="team__foto"
                   src="images/popov.png"
                   alt="Фотография основателя питомника"
                 />
+                <div class="member__container">
                 <div class="member__card">
                   <h3 class="member__name">Серёжа Попов</h3>
                   <span class="member__function"> Основатель питомника </span>
@@ -289,6 +299,7 @@
                       </a>
                     </li>
                   </ul>
+                </div>
                 </div>
               </li>
               <li class="team__member team__slider--list visually-hidden">
@@ -387,11 +398,11 @@
               </li>
             </ul>
             <button
-              class="slider__togle slider__togle--prev"
+              class="slider__togle slider__togle--prevn team__togle team__togle--prevn"
               type="button"
             ></button>
             <button
-              class="slider__togle slider__togle--next"
+              class="slider__togle slider__togle--next team__togle team__togle--next"
               type="button"
             ></button>
           </div>
@@ -405,9 +416,9 @@
           </з>
           <ol class="help__list">
             <li class="help__item">
-              <div class="help__wrapper help-card">
+              <div class="help__wrapper">
                 <div class="help__question">
-                <p class="help-card__text">
+                <p class="help-question-text">
                   С какого возраста можно забирать котенка из питомника?
                 </p>
                 <button
@@ -416,7 +427,7 @@
                 ></button>
                 </div>
                 <div class="help__answer help__answer--show">
-                  <p class="help-card__all-text">
+                  <p class="help__answer-text">
                     Есть важная причина, почему котенка стоит забирать домой
                     только после трех месяцев, — это вакцинация. Первые прививки
                     животному делают в возрасте 8 недель. Ревакцинация
@@ -424,7 +435,7 @@
                     позднее 12 недель, максимально защищен от различных вирусов
                     и инфекций.
                   </p>
-                  <p class="help-card__all-text">
+                  <p class="help__answer-text help__answer--show">
                     Так что, чтобы в дома появился психически и физически
                     здоровый котенок, игривый, жизнерадостный, самостоятельный и
                     воспитанный, не спешите забирать его от кошки-мамы раньше
@@ -434,29 +445,29 @@
               </div>
             </li>
             <li class="help__item">
-              <div class="help__wrapper help-card">
+              <div class="help__wrapper">
                 <div class="help__question">
-                <p class="help-card__text">Как зарезервировать котенка?</p>
+                <p class="help-question-text">Как зарезервировать котенка?</p>
                 <button class="help__button" type="button"></button>
                 </div>
-              </div>
               <div class="help__answer">
-                <p class="help-card__all-text">
+                <p class="help__answer-text visually-hidden">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Ipsum, reiciendis!
                 </p>
+              </div>
               </div>
             </li>
             <li class="help__item">
               <div class="help__wrapper help-card">
                 <div class="help__question">
-                <p class="help-card__text">
+                <p class="help-question-text">
                   Можно ли купить кота, если я живу в другом городе?
                 </p>
                 <button class="help__button" type="button"></button>
-                <div
+                </div>
                 <div class="help__answer">
-                  <p class="help-card__all-text">
+                  <p class="help__answer-text visually-hidden">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Ipsum, reiciendis!
                   </p>
@@ -465,12 +476,14 @@
             </li>
             <li class="help__item">
               <div class="help__wrapper help-card">
-                <p class="help-card__text">
+                <div class="help__question">
+                <p class="help-question-text">
                   Как подготовить дом к приему нового питомца?
                 </p>
                 <button class="help__button" type="button"></button>
+                </div>
                 <div class="help__answer">
-                  <p class="help-card__all-text">
+                  <p class="help__answer-text visually-hidden">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Ipsum, reiciendis!
                   </p>
@@ -489,7 +502,7 @@
           <blockquote class="reviews__item slider__item">
             <img
               class="reviews__foto"
-              src="images/popov.png"
+              src="images/popov_reviews.png"
               alt="фотография автора отзыва"
             />
             <div class="reviews__author-info">
@@ -497,7 +510,7 @@
               <p class="reviews__author-text">
                 Я выражаю огромную благодарность вашему питомнику. Мой Феликс
                 невероятно умен и воспитан. Огромным плюсом питомника является
-                возможность консультироваться в любое время
+                возможность консультироваться в&nbspлюбое время
               </p>
               <span class="reviews__author-date"> 24 мая 2018 </span>
               <ul class="reviews__author-social social">

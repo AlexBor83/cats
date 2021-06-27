@@ -1,5 +1,6 @@
 .team {
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .team__wrapper {
@@ -9,7 +10,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    
+
   }
 }
 
@@ -33,10 +34,35 @@
 }
 
 .team__member {
-  width: 1034px;
-  display: flex;
-  justify-content: space-between;
-
-
+  position: relative;
+  margin-left: 400px;
 }
 
+.team__foto {
+  width: 360px;
+  height: 366px;
+  position: absolute;
+  left: -370px;
+}
+
+.team__togle {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  height: 30px;
+  top: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--prevn {
+    background-image: url(../../images/vector_left.svg);
+    left: 0px;
+  }
+
+  &--next {
+    right: 40px;
+    background-image: url(../../images/vector_right_slider.svg);
+  }
+}

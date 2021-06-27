@@ -10,7 +10,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    
+
   }
 }
 
@@ -44,7 +44,6 @@
   margin: 0;
   list-style: none;
   display: flex;
-  width: 1148px;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 100px;
@@ -60,6 +59,19 @@
 }
 
 .features__item {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.features__link {
+  display: block;
+  width: 100%;
+  transition: background-color 0.5s;
+
+  &:focus,
+  &:hover {
+    background-color: $brownlight;
+  }
 }
