@@ -47,7 +47,8 @@
 
 }
 
-.pets__link:focus {
+.pets__link:focus,
+.pets__link:hover {
   color: $wight;
 }
 
